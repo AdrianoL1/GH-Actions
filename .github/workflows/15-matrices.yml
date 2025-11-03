@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Setup node
         uses: actions/setup-node@v3
-        with: ${{matrix.os}}
+        with: ${{matrix.node}}
       - name: Perform some tests
         run: echo "Running tests on OS ${{ matrix.os }} and NodeJS ${{ matrix.node }}"
